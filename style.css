@@ -93,38 +93,48 @@ nav ul li a:hover {
 .features-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .feature {
-    background-color: white;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(23% - 40px);
+    width: calc(45% - 40px);
     box-sizing: border-box;
     text-align: center;
+    color: white;
 }
 
 .feature img {
     width: 100px;
     height: auto;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.feature h3 {
-    margin-top: 10px;
+.feature-1 {
+    background-color: #3b3f45;
+}
+
+.feature-2 {
+    background-color: #4b4f55;
+}
+
+.feature-3 {
+    background-color: #5b5f65;
+}
+
+.feature-4 {
+    background-color: #6b6f75;
 }
 
 .about-container {
-    background-color: white;
+    background-color: #7b7f85;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
+    color: white;
 }
 
 footer {
@@ -136,6 +146,6 @@ footer {
 
 @media (max-width: 768px) {
     .feature {
-        width: calc(45% - 40px);
+        width: calc(100% - 40px);
     }
 }
