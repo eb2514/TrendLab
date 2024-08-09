@@ -85,35 +85,52 @@ nav ul li a:hover {
     background-color: #e0e0e0; /* Greyish background */
 }
 
-.features-section, .about-section {
+.features-section {
     background-color: #f5f5f5; /* Light background for contrast */
     padding: 40px 20px;
 }
 
-.features-container, .about-container {
+.features-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevent wrapping so images are side by side */
     justify-content: space-around;
-    background-color: #ffffff; /* White background for features and about sections */
+    background-color: #ffffff; /* White background for features section */
     padding: 20px;
+    overflow-x: auto; /* Allow horizontal scroll if content overflows */
 }
 
-.feature, .about-container p {
-    width: 22%;
-    padding: 10px;
-    box-sizing: border-box;
+.feature {
+    flex: 1 1 auto;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .feature img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images cover the entire space */
+    margin: 0;
+    padding: 0;
+}
+
+.about-section {
+    background-color: #ffffff; /* White background for about section */
+    padding: 40px 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-    .feature, .about-container p {
-        width: 100%;
+    .features-container {
+        flex-direction: column; /* Stack features vertically on smaller screens */
+    }
+    
+    .feature img {
+        height: auto; /* Allow images to adjust height on smaller screens */
     }
 }
 
