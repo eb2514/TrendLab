@@ -2,8 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0; /* Greyish background */
+    background-color: #f0f0f0; /* A base light grey background */
     color: #333;
+    background-image: 
+        radial-gradient(circle, #d1d1d1 1px, transparent 1px), 
+        radial-gradient(circle, #d1d1d1 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
 }
 
 header {
@@ -82,7 +87,7 @@ nav ul li a:hover {
 .content-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #e0e0e0; /* Greyish background */
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly transparent to show pattern */
 }
 
 .features-section {
