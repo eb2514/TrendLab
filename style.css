@@ -102,12 +102,13 @@ nav ul li a:hover {
     text-align: center;
     margin: 0;
     padding: 0;
-    flex-grow: 1; /* Make each feature grow equally */
+    width: 25%; /* Each feature takes up 25% of the container */
 }
 
 .feature img {
     width: 100%; /* Make the image take up the full width of the feature */
-    height: auto;
+    height: 250px; /* Fixed height */
+    object-fit: cover;
     margin: 0;
     padding: 0;
     border-right: 1px solid #ccc; /* Add a right border to each image */
@@ -115,6 +116,11 @@ nav ul li a:hover {
 
 .feature:last-child img {
     border-right: none; /* Remove the border from the last image */
+}
+
+.feature h3, .feature p {
+    margin: 10px 0;
+    padding: 0;
 }
 
 .about-section {
@@ -134,9 +140,12 @@ nav ul li a:hover {
         flex-direction: column; /* Stack features vertically on smaller screens */
     }
     
+    .feature {
+        width: 100%; /* Ensure each feature takes full width on smaller screens */
+    }
+    
     .feature img {
-        width: 100%; /* Ensure the image takes full width on smaller screens */
-        height: auto;
+        height: auto; /* Adjust the height of the image on smaller screens */
         border-right: none;
         margin-bottom: 10px; /* Add spacing on smaller screens */
     }
