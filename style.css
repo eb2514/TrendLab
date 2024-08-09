@@ -94,22 +94,27 @@ nav ul li a:hover {
 
 .features-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .feature {
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    flex-grow: 1; /* Make each feature grow equally */
 }
 
 .feature img {
-    width: 200px; /* Fixed width */
-    height: 350px; /* Fixed height */
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 1px solid #ccc; /* Border around each image */
+    width: 100%; /* Make the image take up the full width of the feature */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ccc; /* Add a right border to each image */
+}
+
+.feature:last-child img {
+    border-right: none; /* Remove the border from the last image */
 }
 
 .about-section {
@@ -130,7 +135,10 @@ nav ul li a:hover {
     }
     
     .feature img {
-        height: auto; /* Allow images to adjust height on smaller screens */
+        width: 100%; /* Ensure the image takes full width on smaller screens */
+        height: auto;
+        border-right: none;
+        margin-bottom: 10px; /* Add spacing on smaller screens */
     }
 }
 
