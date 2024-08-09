@@ -110,8 +110,8 @@ nav ul li a:hover {
 }
 
 .feature img {
-    width: 100px; /* Fixed width */
-    height: 250px; /* Fixed height */
+    width: 300px; /* Fixed width */
+    height: 600px; /* Fixed height */
     object-fit: cover;
     margin-bottom: 10px;
     border: 1px solid #ccc; /* Border around the image */
