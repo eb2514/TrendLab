@@ -86,40 +86,37 @@ nav ul li a:hover {
 }
 
 .features-section {
-    background-color: #f5f5f5; /* Light background for contrast */
+    background-color: #ffffff; /* White background for features section */
     padding: 40px 20px;
+    border: 1px solid #ccc; /* Border around the entire features section */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .features-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping so images are side by side */
     justify-content: space-around;
-    background-color: #ffffff; /* White background for features section */
-    padding: 20px;
-    overflow-x: auto; /* Allow horizontal scroll if content overflows */
+    align-items: center;
 }
 
 .feature {
-    flex: 1 1 auto;
     text-align: center;
-    margin: 10px;
+    margin: 0;
     padding: 10px;
-    border: 1px solid #ccc; /* Small border around each feature */
-    box-sizing: border-box;
-    background-color: #f9f9f9;
 }
 
 .feature img {
-    width: 300px; /* Fixed width */
-    height: 400px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    height: 350px; /* Fixed height */
     object-fit: cover;
     margin-bottom: 10px;
-    border: 1px solid #ccc; /* Border around the image */
+    border: 1px solid #ccc; /* Border around each image */
 }
 
 .about-section {
     background-color: #ffffff; /* White background for about section */
     padding: 40px 20px;
+    border: 1px solid #ccc; /* Border around the entire about section */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .about-section p {
