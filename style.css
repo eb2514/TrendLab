@@ -99,15 +99,15 @@ nav ul li a:hover {
 
 .features-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    grid-gap: 0; /* No gap between the columns */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
 }
 
 .feature {
     text-align: center;
     margin: 0;
     padding: 0;
-    border: 1px solid black; /* Small black border around each feature */
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -127,20 +127,30 @@ nav ul li a:hover {
 }
 
 .about-section {
+    display: flex;
+    flex-direction: row;
     background-color: #ffffff;
     padding: 40px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.about-section img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
 .about-section p {
     max-width: 800px;
-    margin: 0 auto;
+    text-align: left;
+    margin: auto 0;
 }
 
 @media (max-width: 768px) {
     .features-container {
-        grid-template-columns: 1fr; /* Stack features vertically on smaller screens */
+        grid-template-columns: 1fr;
     }
 
     .feature {
@@ -151,6 +161,15 @@ nav ul li a:hover {
         height: auto;
         border-right: none;
         margin-bottom: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section img {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
