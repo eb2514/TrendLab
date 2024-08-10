@@ -98,20 +98,19 @@ nav ul li a:hover {
 }
 
 .features-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch; /* Ensure the features stretch to the same height */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-gap: 0; /* No gap between the columns */
 }
 
 .feature {
     text-align: center;
     margin: 0;
     padding: 0;
-    width: 25%;
+    border: 1px solid black; /* Small black border around each feature */
     display: flex;
-    flex-direction: column; /* Allows the content to flow vertically */
-    justify-content: space-between; /* Ensures the elements are evenly distributed */
-    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .feature img {
@@ -120,11 +119,6 @@ nav ul li a:hover {
     object-fit: cover;
     margin: 0;
     padding: 0;
-    border-right: 1px solid #ccc;
-}
-
-.feature:last-child img {
-    border-right: none;
 }
 
 .feature h3, .feature p {
@@ -146,13 +140,13 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .features-container {
-        flex-direction: column;
+        grid-template-columns: 1fr; /* Stack features vertically on smaller screens */
     }
-    
+
     .feature {
         width: 100%;
     }
-    
+
     .feature img {
         height: auto;
         border-right: none;
