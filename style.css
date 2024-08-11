@@ -5,8 +5,8 @@ body {
     background-color: #f0f0f0;
     color: #333;
     background-image: 
-        radial-gradient(circle, #d1d1d1 1px, transparent 1px), 
-        radial-gradient(circle, #d1d1d1 1px, transparent 1px);
+        radial-gradient(circle, #dcdcdc 1px, transparent 1px), 
+        radial-gradient(circle, #dcdcdc 1px, transparent 1px);
     background-position: 0 0, 25px 25px;
     background-size: 50px 50px;
 }
@@ -141,7 +141,7 @@ nav ul li a:hover {
 }
 
 .features-section {
-    background-color: #f5f7fa;
+    background-color: #e8ecf1;
     padding: 60px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -181,7 +181,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #ffffff;
+    background-color: #d4e0f0;
 }
 
 .feature:hover {
@@ -212,7 +212,7 @@ nav ul li a:hover {
 
 .about-section {
     display: flex;
-    background-color: #e8ecf1;
+    background-color: #cfdce7;
     padding: 40px 20px;
     align-items: center;
 }
