@@ -186,63 +186,64 @@ nav ul li a:hover {
 .feature p {
     font-size: 1em;
     color: #666;
-    margin: 0;
 }
 
 .about-section {
     display: flex;
-    background-color: #ffffff;
-    padding: 40px 20px;
     align-items: center;
-    border: 1px solid #ccc; /* Border around About Us section */
-    border-radius: 10px; /* Added rounded corners */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    padding: 60px 20px;
+    background-color: #f7f7f7;
 }
 
 .about-section img {
-    width: 50%;
+    flex: 1;
+    width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 10px; /* Rounded corners for image */
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
     flex: 1;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
-.about-section h2 {
-    text-align: left;
+.about-text h2 {
     font-size: 2em;
+    color: #3b3f45;
     margin-bottom: 20px;
 }
 
-.about-section p {
-    text-align: left;
+.about-text p {
     font-size: 1.2em;
+    color: #555;
     line-height: 1.6;
 }
 
-.contact-section {
+.contact-footer {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #3b3f45;
     color: white;
     margin-top: 20px;
-    border: 1px solid #ccc; /* Border around Contact Us section */
-    border-radius: 10px; /* Added rounded corners */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #3b3f45;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #ccc; /* Border above the footer */
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Shadow to give depth */
+.contact-footer h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
-footer p {
-    margin: 0;
+.contact-footer a.cta-button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.contact-footer p {
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 20px;
 }
