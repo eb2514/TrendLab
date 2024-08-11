@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0; /* Changed background color from white */
+    background-color: #e0e0e0; /* Light greyish background */
     color: #333;
     background-image: 
         radial-gradient(circle, #d1d1d1 1px, transparent 1px), 
@@ -194,12 +194,16 @@ nav ul li a:hover {
     background-color: #ffffff;
     padding: 40px 20px;
     align-items: center;
+    border: 1px solid #ccc; /* Border around About Us section */
+    border-radius: 10px; /* Added rounded corners */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
 .about-section img {
     width: 50%;
     height: auto;
     object-fit: cover;
+    border-radius: 10px; /* Rounded corners for image */
 }
 
 .about-text {
@@ -225,14 +229,18 @@ nav ul li a:hover {
     background-color: #3b3f45;
     color: white;
     margin-top: 20px;
+    border: 1px solid #ccc; /* Border around Contact Us section */
+    border-radius: 10px; /* Added rounded corners */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
 footer {
     background-color: #3b3f45;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #ccc; /* Border above the footer */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Shadow to give depth */
 }
 
 footer p {
