@@ -59,7 +59,7 @@ nav ul li a:hover {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
     color: white;
     position: relative;
-    height: 70vh; /* Adjusted height */
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ nav ul li a:hover {
 }
 
 .headline {
-    font-size: 3em; /* Adjusted font size */
+    font-size: 3em;
     font-weight: 700;
     margin: 0;
     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
@@ -141,7 +141,7 @@ nav ul li a:hover {
 }
 
 .features-section {
-    background-color: #ffffff;
+    background-color: #f5f7fa;
     padding: 60px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -181,6 +181,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
 }
 
 .feature:hover {
@@ -211,7 +212,7 @@ nav ul li a:hover {
 
 .about-section {
     display: flex;
-    background-color: #ffffff;
+    background-color: #e8ecf1;
     padding: 40px 20px;
     align-items: center;
 }
