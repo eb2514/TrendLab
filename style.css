@@ -59,7 +59,7 @@ nav ul li a:hover {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
     color: white;
     position: relative;
-    height: 70vh;
+    height: 70vh; /* Adjusted height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ nav ul li a:hover {
 }
 
 .headline {
-    font-size: 3em;
+    font-size: 3em; /* Adjusted font size */
     font-weight: 700;
     margin: 0;
     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
@@ -142,25 +142,50 @@ nav ul li a:hover {
 
 .features-section {
     background-color: #ffffff;
-    padding: 40px 20px;
+    padding: 60px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3b3f45;
+    position: relative;
+}
+
+.features-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #61dafb;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .features-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0;
+    grid-gap: 20px;
 }
 
 .feature {
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .feature img {
@@ -169,11 +194,19 @@ nav ul li a:hover {
     object-fit: cover;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.feature h3, .feature p {
-    margin: 10px 0;
+.feature h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #3b3f45;
+}
+
+.feature p {
+    margin: 0 0 10px;
     padding: 0 10px;
+    color: #666;
 }
 
 .about-section {
@@ -212,3 +245,4 @@ nav ul li a:hover {
     background-color: #3b3f45;
     color: white;
     margin-top: 20px;
+}
