@@ -55,14 +55,70 @@ nav ul li a:hover {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+    padding: 120px 20px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
     color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.headline {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.subheadline {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkTextCursor {
+    from { border-right-color: rgba(255, 255, 255, 0.75); }
+    to { border-right-color: transparent; }
+}
+
+.headline {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    box-sizing: border-box;
+}
+
+.scroll-icon {
+    margin-top: 40px;
+}
+
+.scroll-icon span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 5px auto;
+    border-radius: 50%;
+    background-color: #61dafb;
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(10px); }
 }
 
 .cta-button {
@@ -156,45 +212,3 @@ nav ul li a:hover {
     background-color: #3b3f45;
     color: white;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-    .features-container {
-        grid-template-columns: 1fr;
-    }
-
-    .feature {
-        width: 100%;
-    }
-
-    .feature img {
-        height: auto;
-        border-right: none;
-        margin-bottom: 10px;
-    }
-
-    .about-section {
-        flex-direction: column;
-    }
-
-    .about-section img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #3b3f45;
-    color: white;
-}
