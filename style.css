@@ -2,15 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ececec; /* Changed to a softer grey */
+    background-color: #e0e0e0; /* Light greyish background */
     color: #333;
     background-image: 
-        linear-gradient(45deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%), 
-        linear-gradient(-45deg, rgba(0, 0, 0, 0.02) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.02) 75%),
-        linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.02) 75%);
-    background-size: 20px 20px;
-    background-position: 0 0, 0 10px, 10px -10px, -10px 0px; /* Subtle grid pattern */
+        radial-gradient(circle, #d1d1d1 1px, transparent 1px), 
+        radial-gradient(circle, #d1d1d1 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
 }
 
 header {
@@ -19,8 +17,8 @@ header {
     background-color: #3b3f45;
     color: white;
     padding: 10px 0;
-    border-bottom: 3px solid #61dafb;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #61dafb; /* Added bottom border for a sleek look */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
     z-index: 1000;
 }
 
@@ -34,11 +32,11 @@ nav {
 #logo {
     width: 80px;
     height: auto;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Transition for hover effect */
 }
 
 #logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
 }
 
 nav ul {
@@ -56,15 +54,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 700;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Transition for hover effect */
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
     color: #61dafb;
-    background-color: rgba(97, 218, 251, 0.2);
-    transform: translateY(-2px);
+    background-color: rgba(97, 218, 251, 0.2); /* Light blue background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
 .hero {
@@ -73,12 +71,11 @@ nav ul li a:hover {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
     color: white;
     position: relative;
-    height: 70vh;
+    height: 70vh; /* Adjusted height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-blend-mode: multiply; /* Adds more depth to the image */
 }
 
 .hero-content {
@@ -87,7 +84,7 @@ nav ul li a:hover {
 }
 
 .headline {
-    font-size: 3em;
+    font-size: 3em; /* Adjusted font size */
     font-weight: 700;
     margin: 0;
     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
@@ -156,7 +153,7 @@ nav ul li a:hover {
 }
 
 .features-section {
-    background-color: #f0f0f0; /* Soft grey background */
+    background-color: #ffffff;
     padding: 40px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -165,31 +162,31 @@ nav ul li a:hover {
 .features-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 20px; /* Added spacing between features */
 }
 
 .feature {
     text-align: center;
     margin: 0;
-    padding: 20px;
-    border: 2px solid #3b3f45;
-    border-radius: 10px;
-    background: linear-gradient(145deg, #e0e0e0, #c1c1c1); /* Softer gradient background */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px; /* Added padding for more space around content */
+    border: 2px solid #3b3f45; /* Darker border for more contrast */
+    border-radius: 10px; /* Added rounded corners */
+    background: linear-gradient(145deg, #ffffff, #d1d1d1); /* Subtle gradient background */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Added shadow for a 3D effect */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Hover effect to lift the feature */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .feature img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    margin-bottom: 15px;
-    border-radius: 8px;
+    margin-bottom: 15px; /* Added space between image and text */
+    border-radius: 8px; /* Rounded corners for images */
 }
 
 .feature h3 {
@@ -207,7 +204,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     padding: 60px 20px;
-    background-color: #dedede; /* Softer grey background */
+    background-color: #f7f7f7;
 }
 
 .about-section img {
