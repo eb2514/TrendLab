@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0; /* Changed background color from white */
     color: #333;
     background-image: 
         radial-gradient(circle, #d1d1d1 1px, transparent 1px), 
@@ -142,71 +142,51 @@ nav ul li a:hover {
 
 .features-section {
     background-color: #ffffff;
-    padding: 60px 20px;
+    padding: 40px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.features-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #3b3f45;
-    position: relative;
-}
-
-.features-section h2::after {
-    content: '';
-    width: 80px;
-    height: 4px;
-    background-color: #61dafb;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .features-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 20px; /* Added spacing between features */
 }
 
 .feature {
     text-align: center;
     margin: 0;
-    padding: 20px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 20px; /* Added padding for more space around content */
+    border: 2px solid #3b3f45; /* Darker border for more contrast */
+    border-radius: 10px; /* Added rounded corners */
+    background: linear-gradient(145deg, #ffffff, #d1d1d1); /* Subtle gradient background */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Added shadow for a 3D effect */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Hover effect to lift the feature */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .feature img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px; /* Added space between image and text */
+    border-radius: 8px; /* Rounded corners for images */
 }
 
 .feature h3 {
     font-size: 1.5em;
-    margin: 20px 0 10px;
     color: #3b3f45;
+    margin-bottom: 10px;
 }
 
 .feature p {
-    margin: 0 0 10px;
-    padding: 0 10px;
+    font-size: 1em;
     color: #666;
+    margin: 0;
 }
 
 .about-section {
@@ -245,4 +225,16 @@ nav ul li a:hover {
     background-color: #3b3f45;
     color: white;
     margin-top: 20px;
+}
+
+footer {
+    background-color: #3b3f45;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
