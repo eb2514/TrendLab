@@ -72,7 +72,7 @@ nav ul li a:hover {
 }
 
 .headline {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     margin: 0;
     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
