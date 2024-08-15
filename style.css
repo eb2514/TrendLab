@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(https://github.com/eb2514/TrendLab/blob/main/Untitled.png);
+    background-image: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png?raw=true');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Ensures the background stays fixed when scrolling */
@@ -13,7 +13,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color: #3b3f45;
+    background-color: rgba(59, 63, 69, 0.9); /* Slightly transparent */
     color: white;
     padding: 5px 0;
     border-bottom: 3px solid #61dafb;
@@ -72,7 +72,7 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png?raw=true') no-repeat center center/cover;
     color: white;
     position: relative;
     height: 70vh;
@@ -159,7 +159,7 @@ nav ul li a:hover {
 
 /* Features Section */
 .features-section {
-    background-color: #f0f0f0;
+    background: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png?raw=true') no-repeat center center/cover;
     padding: 40px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -179,7 +179,7 @@ nav ul li a:hover {
 }
 
 .feature {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
     border: 2px solid #333;
     padding: 0;
     margin: 0;
@@ -197,90 +197,84 @@ nav ul li a:hover {
 }
 
 .feature h3 {
-    background-color: #e0e0e0;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     font-size: 1.2em;
-    font-weight: 700;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Same as the description background */
 }
 
 .feature p {
+    font-size: 1em;
+    line-height: 1.6;
     padding: 10px;
-    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Same as the title background */
 }
 
 .feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* About Section */
+/* About Us Section */
 .about-section {
+    background: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png?raw=true') no-repeat center center/cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 40px 20px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    max-width: 1200px; 
-    margin: 40px auto;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 20px;
 }
 
 .about-section img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+    flex-basis: 50%;
     border-radius: 10px;
-    margin-right: 40px;
 }
 
 .about-text {
-    max-width: 600px;
+    flex-basis: 50%;
 }
 
 .about-text h2 {
+    margin-top: 0;
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
-.about-text p {
-    font-size: 1.2em;
-    line-height: 1.5;
-}
-
-/* Footer / Contact Us Section */
+/* Contact Us & Footer Section */
 .contact-footer {
-    background-color: #3b3f45;
+    background: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png?raw=true') no-repeat center center/cover;
+    background-color: rgba(59, 63, 69, 0.9); /* Slightly transparent */
     color: white;
-    padding: 40px 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 40px 20px;
+    padding: 40px 20px;
+    border-top: 3px solid #61dafb;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
 }
 
 .contact-footer h2 {
+    margin-top: 0;
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .contact-footer p {
     font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.contact-footer a.cta-button {
+.contact-footer .cta-button {
     background-color: #61dafb;
     color: #3b3f45;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.contact-footer a.cta-button:hover {
-    background-color: #21a1f1;
+.contact-footer .cta-button:hover {
     transform: translateY(-3px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
 }
