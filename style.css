@@ -3,16 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ececec;
-    color: #333;
-    background-image: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png');
+    background-image: url('your-image-url-here'); /* Replace with your custom background image */
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the background stays fixed when scrolling */
+    color: #333;
 }
 
 /* Header */
 header {
-    position: relative;
     width: 100%;
     background-color: #3b3f45;
     color: white;
@@ -20,7 +19,6 @@ header {
     border-bottom: 3px solid #61dafb;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    background-image: linear-gradient(135deg, #3b3f45 50%, #61dafb 50%);
 }
 
 nav {
@@ -74,7 +72,7 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png') no-repeat center center/cover;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
     color: white;
     position: relative;
     height: 70vh;
@@ -161,7 +159,7 @@ nav ul li a:hover {
 
 /* Features Section */
 .features-section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f0f0f0;
     padding: 40px 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -170,9 +168,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png');
-    background-size: cover;
-    background-blend-mode: multiply;
 }
 
 .features-container {
@@ -201,152 +196,91 @@ nav ul li a:hover {
     border-bottom: 2px solid #333;
 }
 
-/* Different images for each feature */
-.feature:nth-child(1) img {
-    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRhdGElMjBhbmFseXRpY3N8ZW58MHx8MHx8fDI%3D');
-    background-size: cover;
-    background-position: center;
-}
-
-.feature:nth-child(2) img {
-    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMGFuYWx5dGljc3xlbnwwfHwwfHx8fDI%3D');
-    background-size: cover;
-    background-position: center;
-}
-
-.feature:nth-child(3) img {
-    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5dGljc3xlbnwwfHwwfHx8fDI%3D');
-    background-size: cover;
-    background-position: center;
-}
-
-.feature:nth-child(4) img {
-    background-image: url('https://images.unsplash.com/photo-1531497865141-044adf48a2c8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5dGljc3xlbnwwfHwwfHx8fDI%3D');
-    background-size: cover;
-    background-position: center;
-}
-
 .feature h3 {
+    background-color: #e0e0e0;
     margin: 0;
     padding: 10px;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: #fff; 
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 .feature p {
-    font-size: 1em;
-    line-height: 1.6;
     padding: 10px;
-    background-color: #fff; 
+    margin: 0;
 }
 
 .feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* About Us Section */
+/* About Section */
 .about-section {
     display: flex;
-    padding: 40px 20px;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    background-color: #f7f7f7;
     border-radius: 10px;
-    background-image: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png');
-    background-size: cover;
-    background-blend-mode: multiply;
+    max-width: 1200px; 
+    margin: 40px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-content {
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-}
-
-.about-image {
-    flex: 1;
-    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRhdGElMjBhbmFseXRpY3N8ZW58MHx8MHx8fDI%3D');
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 300px;
-    border-radius: 10px 0 0 10px;
-    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
+.about-section img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 40px;
 }
 
 .about-text {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 0 10px 10px 0;
-    box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 }
 
-/* Contact Section */
-.contact-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('https://github.com/eb2514/TrendLab/blob/main/Untitled.png');
-    background-size: cover;
-    background-blend-mode: multiply;
-}
-
-.contact-text {
-    font-size: 1.2em;
-    text-align: center;
+.about-text h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-.contact-button {
-    background-color: #61dafb;
-    color: #3b3f45;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    text-decoration: none;
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
-.contact-button:hover {
-    background-color: #21a1f1;
-    transform: translateY(-3px);
-}
-
-/* Footer Section */
-footer {
+/* Footer / Contact Us Section */
+.contact-footer {
     background-color: #3b3f45;
     color: white;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    border-top: 3px solid #61dafb;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 20px;
 }
 
-footer p {
-    margin: 0;
+.contact-footer h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-footer a {
-    color: #61dafb;
+.contact-footer p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-footer a.cta-button {
+    background-color: #61dafb;
+    color: #3b3f45;
+    border-radius: 5px;
+    padding: 10px 20px;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-footer a:hover {
-    color: #21a1f1;
-    text-decoration: underline;
+.contact-footer a.cta-button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-3px);
 }
