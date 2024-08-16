@@ -9,12 +9,11 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="https://raw.githubusercontent.com/AnisZakari/tutorial_create_website_with_ChatGPT/main/ai_company_logo.png" alt="TrendLabs Logo">
+            <img src="https://raw.githubusercontent.com/AnisZakari/tutorial_create_website_with_ChatGPT/main/ai_company_logo.png" alt="TrendLabs Logo" id="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact-footer">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -22,48 +21,49 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="headline">Market Analysis for Professionals</h1>
-            <p class="subheadline">Empowering Small Businesses and Research Students with Data-Driven Insights</p>
+            <p class="subheadline">Providing tools and consultancy for small businesses and research students.</p>
+            <a href="#contact-footer" class="cta-button">Get Started</a>
         </div>
     </section>
 
-    <section class="features-section">
+    <section class="features-section" id="features">
         <div class="features-container">
             <div class="feature">
                 <img src="https://via.placeholder.com/100x250" alt="Feature 1">
-                <h3>Comprehensive Data</h3>
-                <p>Access extensive datasets tailored for your needs.</p>
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1.</p>
             </div>
             <div class="feature">
                 <img src="https://via.placeholder.com/100x250" alt="Feature 2">
-                <h3>Real-Time Analytics</h3>
-                <p>Get insights instantly with our real-time data processing.</p>
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2.</p>
             </div>
             <div class="feature">
                 <img src="https://via.placeholder.com/100x250" alt="Feature 3">
-                <h3>Custom Reports</h3>
-                <p>Generate reports customized to your research or business.</p>
+                <h3>Feature 3</h3>
+                <p>Description of Feature 3.</p>
             </div>
             <div class="feature">
                 <img src="https://via.placeholder.com/100x250" alt="Feature 4">
-                <h3>Research Assistance</h3>
-                <p>Our tools support your academic research needs.</p>
+                <h3>Feature 4</h3>
+                <p>Description of Feature 4.</p>
             </div>
         </div>
     </section>
 
-    <section class="about-section">
-        <img src="https://via.placeholder.com/600x400" alt="About Us Image">
+    <section class="about-section" id="about">
+        <img src="https://via.placeholder.com/400x400" alt="About Us Image">
         <div class="about-text">
             <h2>About TrendLabs</h2>
-            <p>At TrendLabs, we specialize in providing market analysis tools designed for small businesses and research students. Our goal is to empower you with data-driven insights that can drive your business decisions and academic research forward.</p>
+            <p>TrendLabs offers cutting-edge market analysis tools and personalized consultancy services for small businesses and research students. Our mission is to provide deep insights and actionable data to help our clients succeed.</p>
         </div>
     </section>
 
-    <div class="contact-footer">
-        <h2>Want to know more about how we can help you? Explore our tool or reach out to us directly!</h2>
-        <a href="mailto:info@trendlabs.com" class="cta-button">Contact Us</a>
-        <p>&copy; 2024 TrendLabs. All Rights Reserved.</p>
-    </div>
+    <footer class="contact-footer" id="contact-footer">
+        <h2>Contact Us</h2>
+        <p>Want to know more about how we can help you? Explore our tool or reach out to us directly!</p>
+        <a href="mailto:contact@trendlabs.com" class="cta-button">Contact Us</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
