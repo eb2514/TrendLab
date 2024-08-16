@@ -181,7 +181,6 @@ nav ul li a:hover {
 }
 
 .feature {
-    background: linear-gradient(135deg, #fff, #f8f8f8);
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
