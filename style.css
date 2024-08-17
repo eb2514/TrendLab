@@ -24,6 +24,7 @@ header {
     border-bottom: 3px solid #61dafb;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    background-image: linear-gradient(135deg, #3b3f45 50%, #61dafb 50%);
 }
 
 nav {
@@ -164,10 +165,11 @@ nav ul li a:hover {
 
 /* Features Section */
 .features-section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .features-container {
@@ -175,48 +177,44 @@ nav ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
 .feature {
-    background-color: #ffffff;
-    padding: 0;
-    margin: 0;
+    background-color: #fff;
+    border: 2px solid #333;
     display: flex;
     flex-direction: column;
-    height: 300px; 
+    height: 400px; /* Increased the height */
     transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature img {
     width: 100%;
-    height: 150px;
+    height: 250px; /* Increased the height */
     object-fit: cover;
+    border-bottom: 2px solid #333;
 }
 
 .feature h3 {
     margin: 0;
-    padding: 15px;
-    font-size: 1.2em;
+    padding: 10px;
+    font-size: 1.5em;
     text-align: center;
-    background-color: #ffffff; 
-    flex-grow: 1;
+    background-color: #fff;
 }
 
 .feature p {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.6;
-    padding: 15px;
-    background-color: #ffffff; 
-    flex-grow: 2;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* About Us Section */
