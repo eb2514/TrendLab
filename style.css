@@ -204,7 +204,6 @@ nav ul li a:hover {
     line-height: 1.6;
     padding: 15px;
     background-color: #ffffff;
-    border-top: 1px solid #ccc;
     transition: background-color 0.3s;
 }
 
