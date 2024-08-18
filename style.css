@@ -14,15 +14,15 @@ body {
     background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
-/* Header */
+/* Enhanced Header Styles */
 header {
     position: relative;
     width: 100%;
-    background-color: #3b3f45;
+    background: linear-gradient(90deg, #3b3f45, #2e3238); /* Smooth gradient */
     color: white;
-    padding: 5px 0;
+    padding: 10px 0;
     border-bottom: 3px solid #61dafb;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow */
     z-index: 1000;
 }
 
@@ -30,17 +30,22 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
+    background: rgba(0, 0, 0, 0.2); /* Transparent background layer */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for the nav bar */
 }
 
 #logo {
-    width: 60px;
+    width: 70px;
     height: auto;
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.3s;
+    filter: drop-shadow(0px 0px 6px rgba(97, 218, 251, 0.5)); /* Glowing effect */
 }
 
 #logo:hover {
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(1.2) rotate(15deg);
+    filter: drop-shadow(0px 0px 10px rgba(97, 218, 251, 0.8)); /* Intense glow on hover */
 }
 
 nav ul {
@@ -51,26 +56,30 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 700;
-    transition: color 0.3s, transform 0.3s;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background: linear-gradient(120deg, transparent 0%, transparent 50%, #61dafb 50%);
-    background-size: 220%;
-    background-position: 100%;
-    transition: background-position 0.5s, color 0.5s;
+    padding: 12px 20px;
+    border-radius: 25px; /* Fully rounded links */
+    background: linear-gradient(120deg, #61dafb 0%, #3b3f45 100%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Add a box shadow */
+    transition: background 0.5s, transform 0.3s, box-shadow 0.3s;
 }
 
 nav ul li a:hover {
-    background-position: 0%;
-    color: #3b3f45;
-    transform: translateY(-2px);
+    background: linear-gradient(120deg, #3b3f45 0%, #61dafb 100%); /* Reverse the gradient on hover */
+    color: #ffffff;
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+nav ul li a:active {
+    transform: scale(1.05) translateY(-1px); /* Slightly reduce transform when active */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Less shadow when clicked */
 }
 
 /* Hero Section */
