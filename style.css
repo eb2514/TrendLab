@@ -175,6 +175,9 @@ nav ul li a:active {
 }
 
 /* Features Section */
+.features-section {
+    padding: 60px 20px; /* Increased padding for a more spacious look */
+}
 
 .features-container {
     display: grid;
