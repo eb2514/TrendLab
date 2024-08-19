@@ -215,8 +215,6 @@ nav ul li a:active {
     font-size: 1em;
     line-height: 1.6;
     padding: 15px;
-    background-color: #f8f8f8; /* Off-white background */
-    transition: background-color 0.3s;
 }
 
 .feature:hover {
