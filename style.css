@@ -177,6 +177,7 @@ nav ul li a:active {
 /* Features Section */
 .features-section {
     padding: 60px 20px; /* Increased padding for a more spacious look */
+    margin: 20px 0; /* Space around the section */
 }
 
 .features-container {
